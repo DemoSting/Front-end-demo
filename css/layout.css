@@ -1,0 +1,46 @@
+#imagegallery{
+    list-style: none;
+}
+
+#imagegallery li{
+    display: inline-block;
+}
+
+.title-img{
+    width: 200px;
+}
+
+ul{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#imagegallery-display{
+    margin-top: 40px;
+}
+
+#imagegallery-display div{
+    width: 1000px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+#imagegallery-display p{
+    text-align: center;
+}
+
+.img-display{
+    /*display: inline-block;无法居中*/
+    display: block;
+    border: 1px solid gray;
+    padding: 5px 5px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+
