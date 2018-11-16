@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .focus{
+        background-color: #3c3c3c;
+    }
+
+    span{
+        display: inline-block;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+        background-color: #1B9AF7;
+        line-height: 20px;
+        cursor:pointer;
+    }
+
+    .father{
+        text-align: center;
+    }
+</style>
+<body>
+<div class="father">
+    <div>
+        <span class="bigger">+</span>
+        <span class="small">-</span>
+    </div>
+
+    <div>
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        var comment = $('#comment');
+        $('.bigger').click(function () {
+            if(!comment.is(':animated')){
+                comment.animate({'height':'+=50px'},'slow');
+            }
+        });
+
+        $('.small').click(function () {
+            if(!comment.is('animated')){
+                if(comment.height() > 50){
+                    comment.animate({'height':'-=50'},'slow');
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>
